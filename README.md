@@ -12,3 +12,4 @@
 
 * NO es el oficial para ver las soluciones, aqui podrás ver soluciones propias a los retos que se lanzan.
 
+* Mis soluciones estarán habitualmente en Python y JavaScript.
