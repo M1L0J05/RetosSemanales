@@ -1,4 +1,4 @@
-![https://retosdeprogramacion.com/semanales2023](./Images/header.jpg)
+![https://retosdeprogramacion.com/semanales2023](./00-Images/header.jpg)
 
 # Retos de programación semanales 2023
 
