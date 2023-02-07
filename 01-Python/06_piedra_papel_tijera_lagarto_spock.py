@@ -6,3 +6,10 @@
 # *   "✂️" (tijera), "🦎" (lagarto) o "🖖" (spock).
 # * - Ejemplo. Entrada: [("🗿","✂️"), ("✂️","🗿"), ("📄","✂️")]. Resultado: "Player 2".
 # * - Debes buscar información sobre cómo se juega con estas 5 posibilidades.
+
+### Reglas:
+# "🗿" --> "🦎"-"✂️"
+# "📄" --> "🖖"-"🗿"
+# "✂️" --> "🦎"-"📄"
+# "🦎" -->  "🖖"-"📄"
+# "🖖" --> "✂️"-"🗿"
