@@ -32,10 +32,11 @@ moves = {
     '5':'🖖'
 }
 
-print('Bienvenido al juego "Piedra, Papel, Tijeras, Lagarto, Spock".\n')
-print('Menu de movimientos:\n1- 🗿 Piedra\n2- 📄 Papel\n3- ✂️  Tijeras\n4- 🦎 Lagarto\n5- 🖖 Spock\n')
 
 def main():
+    print('Bienvenido al juego "Piedra, Papel, Tijeras, Lagarto, Spock".\n')
+    print('Menu de movimientos:\n1- 🗿 Piedra\n2- 📄 Papel\n3- ✂️  Tijeras\n4- 🦎 Lagarto\n5- 🖖 Spock\n')
+    
     player = 0
     cpu = 0
     cont = 0
@@ -43,18 +44,16 @@ def main():
     while cont < 5:
         player_move = input('Player 1 - Inserta el número de tu movimiento. ')
         cpu_move = str(random.randint(1,5))
-        print(f'{moves[player_move]} vs {moves[cpu_move]}')
+
         if player_move != cpu_move:
             if moves[cpu_move] in who_wins[moves[player_move]]:
-                print(f'Gana Player - {moves[player_move]}')
                 player += 1
             else:
                 cpu += 1
-                print(f'Pierde Player - {moves[player_move]}')
-        else:
-            print('Empate')
-            
+        
+        print(f'{moves[player_move]} vs {moves[cpu_move]}')
         cont +=1
+
     
     if player != cpu:
         if player > cpu:
