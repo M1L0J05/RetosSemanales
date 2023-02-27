@@ -87,7 +87,6 @@ ANSWER = {
     }
 }
 
-
 def check_input(expression_input):
     while True:
         number_input = input(expression_input)
@@ -100,14 +99,14 @@ def check_input(expression_input):
             print('>>> Por favor, use los numeros del 1 al 4.\n')
 
 def quizz(name):
-    que = 'query_'
-    ans = 'answer_'
+    query_key = 'query_'
+    answer_key = 'answer_'
     cont = 1
     player_responses = []
     
     for i in QUIZZ:
-        query = f'>>> {QUIZZ[(que + str(cont))]}'
-        answers = ANSWER[(ans + str(cont))]
+        query = f'>>> {QUIZZ[(query_key + str(cont))]}'
+        answers = ANSWER[(answer_key + str(cont))]
         print('---------------------------------------------------------')
         print(query)
         for index, x in enumerate(answers.keys()):
